@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/icon/iconfont.css">
+	<link rel="stylesheet" href="css/icon/demo.css">
+	<link rel="stylesheet" href="css/register.css">
+	
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/register.js"></script>
+</head>
+<body>
+	<div class="reg" >
+		<div class="logo">
+			<img src="images/logo2.png" alt="">
+		</div>
+		<div class="frame">
+		<!-- 提示用户注册的文字 -->
+			<div class="frame-top">
+				<div>
+					<span class="colorchunk"></span>
+				</div>
+				<div>
+					<span class="frame-top-word">用户注册</span>
+				</div>
+			</div>
+
+<!-- 建立一个form表单方便数据的提交 -->
+	<!-- 表单提交后转向登录界面 -->
+	<form action="Login.html"> 
+
+		<!-- 输入手机号码部分 -->
+			<div class="userregion">
+				<div class="figure"> 
+					<i class="icon iconfont icon-shouji"></i>
+				</div>
+				<input type="text" class="phone" id="phone" placeholder="手机号码" onblur="dophone()">
+				<span class="phone-word">手机号码为必填</span>
+			</div>
+
+
+
+		<!-- 获取验证码部分 -->
+			<div class="validate">
+				<input type="text" class="validatetxt" placeholder="验证码"  onblur="dorandom()">
+				<div>
+					<input type="button" class="erweima-button" value="获取验证码">
+				</div>
+				<div class="validateicon">
+					<i class="icon iconfont icon-erweima"></i>
+				</div>
+				<span class="validate-word">验证码必须填写</span>
+			</div>
+
+		<!-- 第一次输入密码 -->
+			<div class="lock">
+				<input type="password" class="password" id="password" placeholder="登录密码" onblur="dopassword()">
+				<div class="lockicon"> 
+				 <i class="icon iconfont icon-mima locksicon"></i>
+				</div>
+				<span class="password-word">密码必须填写</span>
+				</div>
+		
+		<!-- 确认密码不认 -->
+			<div class="locktwo">
+				<input type="password" class="passwordtwo" id="passwordtwo" placeholder="确认密码" onblur="dorepassword()">
+				<div class="lockicontwo"> 
+				 <i class="icon iconfont icon-mima icontwo"></i>
+				</div>
+				<span class="passwordtwo-word">密码必须填写</span>
+				</div>
+
+		</form>
+
+		<!-- 提交协议部分 -->
+			<div class="confirm">
+				<div>
+					<input type="button" value="同意协议并提交" class="login" onclick="saveStorage()">
+				</div>
+				<div class="links">
+					<a href="#" class="redister">已注册？立即登录</a>
+				</div>
+				<div class="forget-passworf">
+					<span>注册即同意</span>
+					<a href="#">《伟达金云桥使用协议》</a>
+				</div>
+				
+			</div>
+			
+
+		</div>
+	</div>
+</body>
+</html>

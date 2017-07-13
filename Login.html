@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/icon/iconfont.css">
+	<link rel="stylesheet" href="css/icon/demo.css">
+	<link rel="stylesheet" href="css/Login.css">
+	
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/Login.js"></script>
+	
+</head>
+<body>
+	<div class="reg">
+		<div class="logo">
+			<img src="images/logo2.png" alt="">
+		</div>
+		<div class="frame">
+		<!-- 提示用户登录的文字 -->
+			<div class="frame-top">
+				<div>
+					<span class="colorchunk"></span>
+				</div>
+				<div>
+					<span class="frame-top-word">用户登录</span>
+				</div>
+			</div>
+
+<!-- 建立一个form表单方便数据的提交 -->
+		<form action="page/index-two.html" >
+		<!-- 用户名必填写的部分 -->
+			<div >
+				<input type="text" class="username" placeholder="用户名" onblur="checkPhone()">
+				<div class="figure"> 
+				<i class="icon iconfont icon-ren"></i>
+				</div>
+				<br>
+				<span class="username-word">用户名必须填写</span>
+			</div>
+
+		<!-- 密码部分 -->
+			<div class="lock">
+				<input type="password" class="password" placeholder="密码" onblur="checkPassword()">
+				<div class="lockicon"> 
+				 <i class="icon iconfont icon-mima"></i>
+				</div>
+				<br>
+				<span class="password-word">密码必须填写</span>
+			</div>
+
+		<!-- 验证码验证部分 -->
+			<div class="validate">
+				<input type="text" class="validatetxt" placeholder="验证码"  onblur="checkRandom()">
+				<span class="replaceimg" >看不清？换图片</span>
+				<input type="button" class="validateicon" value="验证码">
+				<br>
+				<span class="validate-word">验证码必须填写</span>
+			</div>
+		</form>
+	<!-- 表单结束 -->
+
+		<!-- 确定登录的按钮 -->
+			<div class="confirm">
+				<div>
+				<!-- 绑定了一个点击事件 验证表单以及数据提交 -->
+					<input type="button" value="登 录" class="login" onclick="saveStorage()">
+				</div>
+				<div class="links">
+				<!-- 跳转至用户注册页面 -->
+					<a href="register.html" class="redister">用户注册</a>
+				</div>
+					<a href="#" class="forget-passworf">忘记密码？</a>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

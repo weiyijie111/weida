@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+	<script type="text/JavaScript">
+		
+	</script>
+</head>
+<body>
+	<div class="swiper-container">
+	<!-- 头部标签使用绝对定位 -->
+		<div class="header">
+			<ul> <!--  ul使用 flex -->
+	        	<li class="logo-one"><img src="images/nav-logo.png" class="nav-logo"></li>
+	        	<li>优先认购</li>
+	        	<li>我要投资</li>
+	        	<li>我要转让</li>
+				<li>我要供票</li>
+				<li>我的云桥</li>
+				<li>帮助中心</li>
+				<li class="logo-two">
+					<img class="imgicon" src="images/user.png">
+					<a class="link" href="Login.html">登录</a>
+					<span class="sprit">/</span>
+					<a class="link" href="register.html">注册</a>
+				</li>
+			</ul>
+		</div>
+
+	<!-- 轮播图部分 -->
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+			    <video autoplay="autoplay" loop="loop" src="video/banner.mp4">
+			    </video>
+			</div>
+			<!-- css插入的背景图 -->
+			<div class="swiper-slide imgtwo" >
+			<!-- 手和数据图进入的动画 -->
+			    <div class="ani left" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+			    	<img src="images/quxian.png" class="img-qx">
+			    </div>
+
+			    <div class="ani right" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+					<img src="images/table.png" class="img-table">
+			    </div>
+			</div>
+			<div class="swiper-slide" style="background-image:url(images/3.jpg)"></div>
+			<div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
+			<div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<script>
+	    var mySwiper=new Swiper(".swiper-container",{
+	    	pagination:".swiper-pagination",
+	    	direction:"vertical",
+	    	mousewheelControl:true,
+	     	onInit:function(swiper){
+				swiperAnimateCache(swiper); //隐藏动画元素 
+    			swiperAnimate(swiper); //初始化完成开始动画
+			},
+			onSlideChangeEnd:function(swiper){
+				swiperAnimate(swiper); //初始化完成开始动画
+				$(".header").slideUp(100);//头部导航的动画
+				$(".header").slideDown(500);				
+			}
+	    })
+	</script>
+</body>
+</html>

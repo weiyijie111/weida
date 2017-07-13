@@ -1,0 +1,294 @@
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+
+body{
+	width:100%;
+	height:100%;
+	background:url('../images/login_background.jpg') no-repeat;
+	background-position:fixed;
+	background-size:cover;
+}
+
+.logo{
+	width:150px;
+	height:45px;
+	position:absolute;
+	top:26px;
+	left:30px;
+}
+
+.frame{
+	width:460px;
+	height:550px;
+	background:#fff;
+	position:absolute;
+	right:180px;
+	top:280px;
+}
+
+.frame-top{
+	width:300px;
+	height:30px;
+	position:absolute;
+	top:28px;
+	left:27px;
+	/* background:#985465; */
+}
+.colorchunk{
+	width:5px;
+	height:21px;
+	background:#e8868b;
+	position:absolute;
+	z-index:1;
+}
+
+.frame-top-word{
+	position:absolute;
+	z-index:1;
+	left:25px;
+	color:#333333;
+	font-size:16px;
+	font-family:"黑体";
+}
+
+
+/* 手机号部分 */
+.userregion{
+	position:absolute;
+
+}
+.phone{
+	width:364px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius:0 4px 4px 0;
+	margin-top: 76px;
+	margin-left:70px;
+}
+.phone::-webkit-input-placeholder{
+	font-size:18px;
+	font-family:"黑体";
+}
+.figure{
+	width:43px;
+	height:50px;
+	border:1px solid #a94442;
+	position:absolute;
+	top:76px;
+	left:27px;
+	z-index:3;
+	background:#f2dede;
+	border-radius:4px 0 0 4px;
+}
+.icon-shouji{
+	font-size:25px;
+	line-height:50px;
+	margin-left:8px;
+	color:#a94442;
+}
+
+.phone-word{
+	font-size:12px;
+	color:#a94442;
+	font-family:"黑体";
+	margin-left:27px;
+}
+
+
+/* 验证码验证部分 */
+.validate{
+	position:absolute;
+	right:180px;
+	top:95px;
+	left:0px;
+}
+
+.validatetxt{
+	width:220px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius: 0 4px 4px 0;
+	margin-top: 76px;
+	margin-left:70px;
+}
+
+.erweima-button{
+	width:123px;
+	height:52px;
+	font-size:18px;
+	font-family:"黑体";
+	color:#fff;
+	position:absolute;
+	top:76px;
+	right:-140px;
+	background:#ec868c;
+	border:1px solid #ec868c;
+	border-radius:4px;
+}
+
+.validateicon{
+	width:43px;
+	height:50px;
+	border:1px solid #a94442;
+	position:absolute;
+	top:76px;
+	left:27px;
+	background:#f2dede;
+	border-radius:4px 0 0 4px;
+}
+
+.validate-word{
+	font-size:12px;
+	color:#a94442;
+	font-family:"黑体";
+	margin-left:27px;
+	position:absolute;
+	top:130px;
+}
+
+.validatetxt::-webkit-input-placeholder{
+	font-size:18px;
+	font-family:"黑体";
+}
+
+.icon-erweima{
+	font-size:25px;
+	line-height:50px;
+	margin-left:8px;
+	color:#a94442;
+}
+
+
+/* 输入登录密码部分 */
+.lock{
+	position:absolute;
+	right:180px;
+	top:190px;
+	left:0px;
+}
+.password{
+	width:364px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius:0 4px 4px 0;
+	margin-top: 76px;
+	margin-left:70px;
+}
+.lockicon{
+	width:43px;
+	height:50px;
+	border:1px solid #a94442;
+	position:absolute;
+	top:76px;
+	left:27px;
+	z-index:3;
+	background:#f2dede;
+	border-radius:4px 0 0 4px;
+}
+.password::-webkit-input-placeholder{
+	font-size:18px;
+	font-family:"黑体";
+}
+.icon-mima{
+	font-size:20px;
+	line-height:50px;
+	margin-left:11px;
+	color:#a94442;
+}
+
+.password-word{
+	font-size:12px;
+	color:#a94442;
+	font-family:"黑体";
+	margin-left:27px;
+}
+
+
+
+
+/* 确认密码部分 */
+.locktwo{
+	position:absolute;
+	right:180px;
+	top:285px;
+	left:0px;
+}
+.passwordtwo{
+	width:364px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius:0 4px 4px 0;
+	margin-top: 76px;
+	margin-left:70px;
+}
+.lockicontwo{
+	width:43px;
+	height:50px;
+	border:1px solid #a94442;
+	position:absolute;
+	top:76px;
+	left:27px;
+	z-index:3;
+	background:#f2dede;
+	border-radius:4px 0 0 4px;
+}
+.passwordtwo::-webkit-input-placeholder{
+	font-size:18px;
+	font-family:"黑体";
+}
+.iconfont{
+	font-size:20px;
+	line-height:50px;
+	margin-left:11px;
+	color:#a94442;
+}
+
+.passwordtwo-word{
+	font-size:12px;
+	color:#a94442;
+	font-family:"黑体";
+	margin-left:27px;
+}
+
+
+
+/*同意提交协议部分*/
+.login{
+	width:405px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius:4px;
+	background:#e2454e;
+	font-family:"黑体";
+	font-size:16px;
+	color:#fff;
+	position:absolute;
+	bottom:48px;
+	left:25px;
+}
+
+.links{
+	width:460px;
+	position:absolute;
+	bottom:25px;
+	left:27px;
+}
+.redister{
+	color:#938fca;
+}
+.forget-passworf{
+	color:#938fca;
+	position:absolute;
+	right:23px;
+	bottom:25px;
+}
+
+.forget-passworf span{
+	color:#000;
+}
+
